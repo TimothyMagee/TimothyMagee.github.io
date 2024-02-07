@@ -146,3 +146,8 @@ div.horizontalgap {
   height: 1px;
   width: 0px;
 }
+ul{
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
