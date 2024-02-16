@@ -47,283 +47,333 @@
 		</tr>
 	</table>
 
-    <h2>Conference Program</h2>
+    <h2>Tentative Schedule</h2>
+	<script>
+	    function openDay(evt, day) {
+ 		 // Declare all variables
+  		var i, tabcontent, tablinks;
 
+  		// Get all elements with class="tabcontent" and hide them
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (i = 0; i < tabcontent.length; i++) {
+    			tabcontent[i].style.display = "none";
+  		}
+
+  		// Get all elements with class="tablinks" and remove the class "active"
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (i = 0; i < tablinks.length; i++) {
+    			tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+
+  		// Show the current tab, and add an "active" class to the button that opened the tab
+  		document.getElementById(day).style.display = "block";
+  		evt.currentTarget.className += " active";
+	    }
+	</script>
+    <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openDay(event, 'monday')">Monday</button>
+  <button class="tablinks" onclick="openDay(event, 'tuesday')">Tuesday</button>
+  <button class="tablinks" onclick="openDay(event, 'wednesday')">Wednesday</button>
+  <button class="tablinks" onclick="openDay(event, 'thursday')">Thursday</button>
+  <button class="tablinks" onclick="openDay(event, 'friday')">Friday</button>
+</div>
+
+<!-- Tab content -->
+<div id="monday" class="tabcontent" style="display:block">
     <table>
         <tr>
             <td class="date" rowspan="2">
-                8:30am
+                2:00pm
             </td>
             <td class="title-special">
-                Registration and Coffee &amp; Tea!
+                Registration
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
-                Notice that the title is styled differently than the ones for talks.
-            </td>
-        </tr>
+	</tr>
     </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:00am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:25am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:50am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                10:15am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
     <table>
         <tr>
             <td class="date" rowspan="2">
-                10:40am
+                2:30pm
+            </td>
+            <td class="title">
+                Talk 1
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                3:30pm
             </td>
             <td class="title-special">
-                Coffee &amp; Tea Break
+                Stimulating Beverages
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
+	</tr>
     </table>
-
-    <table class="plenary">
+    <table>
         <tr>
-            <td class="date" rowspan="3">
+            <td class="date" rowspan="2">
+                4:00pm
+            </td>
+            <td class="title">
+                Talk 2
+            </td>
+	</tr>
+    </table>
+</div>
+
+<div id="tuesday" class="tabcontent">
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                9:30am
+            </td>
+            <td class="title">
+                Talk 3
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                10:30am
+            </td>
+            <td class="title-special">
+                Stimulating Beverages
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
                 11:00am
             </td>
             <td class="title">
-                This is a Plenary Talk!
+                Talk 4
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
+	</tr>
     </table>
-
     <table>
         <tr>
             <td class="date" rowspan="2">
-                Noon
+                12:00pm
             </td>
             <td class="title-special">
                 Lunch
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
+	</tr>
     </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:30pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:55pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
     <table>
         <tr>
             <td class="date" rowspan="2">
-                2:50pm
+                2:00pm
+            </td>
+            <td class="title">
+                Talk 5
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                3:00pm
             </td>
             <td class="title-special">
-                Coffee &amp; Tea Break
+                Stimulating Beverages
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
+	</tr>
     </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
+    <table>
         <tr>
-            <td class="date" rowspan="3">
-                3:10pm
+            <td class="date" rowspan="2">
+                3:30pm
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Talk 6
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
+	</tr>
     </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
+    <table>
         <tr>
-            <td class="date" rowspan="3">
-                3:35pm
+            <td class="date" rowspan="2">
+                4:30pm
+            </td>
+            <td class="title-special">
+                Stimulating Beverages
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                5:00pm
+            </td>
+            <td class="title-special">
+		Short Talks
+            </td>
+	</tr>
+    </table>
+</div>
+
+<div id="wednesday" class="tabcontent">
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                9:30am
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Talk 7
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
+	</tr>
     </table>
-
-    <table class="plenary">
+    <table>
         <tr>
-            <td class="date" rowspan="3">
-                4:00pm
+            <td class="date" rowspan="2">
+                10:30am
+            </td>
+            <td class="title-special">
+                Stimulating Beverages
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                11:00am
             </td>
             <td class="title">
-                This is Another Plenary Talk!
+                Talk 8
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
+	</tr>
     </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:00pm
+            </td>
+            <td class="title-special">
+                Break
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:15pm
+            </td>
+            <td class="title">
+                Talk 9
+            </td>
+	</tr>
+    </table>
+</div>	
+
+<div id="thursday" class="tabcontent">
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                9:30am
+            </td>
+            <td class="title">
+                Talk 10
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                10:30am
+            </td>
+            <td class="title-special">
+                Stimulating Beverages
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                11:00am
+            </td>
+            <td class="title">
+                Talk 11
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:00pm
+            </td>
+            <td class="title-special">
+                Lunch
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                2:00pm
+            </td>
+            <td class="title">
+                Talk 12
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                3:00pm
+            </td>
+            <td class="title-special">
+                Stimulating Beverages
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                3:30pm
+            </td>
+            <td class="title">
+                Talk 13
+            </td>
+	</tr>
+    </table>
+</div>	
+
+<div id="friday" class="tabcontent">
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                10:00am
+            </td>
+            <td class="title">
+                Talk 14
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                11:00am
+            </td>
+            <td class="title-special">
+                Stimulating Beverages
+            </td>
+	</tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                11:30am
+            </td>
+            <td class="title">
+                Talk 15
+            </td>
+	</tr>
+    </table>
+</div>
 
     <footer>
         Conference website based on template of <a href="https://github.com/mikepierce">Mike Pierce</a>
