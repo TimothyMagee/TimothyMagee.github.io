@@ -18,10 +18,13 @@
 *{
     border:0;
     font:inherit;
-    font-size:1em;
     margin:0;
     padding:0;
     vertical-align:baseline;
+}
+
+html {
+	font-size: 1.25em;
 }
 
 body{
@@ -32,8 +35,8 @@ body{
     text-align:left;
     font-family:'Roboto',sans-serif;
     font-size:1em;
-    line-height:1.5em;
-    margin: 60px auto;
+    line-height:1.5;
+    margin: 0 auto 60px auto;
     width: 1600px;
 }
 
@@ -81,25 +84,25 @@ th,td{
 img {
   max-width: 100%;
   height: auto;
-  opacity: .2;
 }
 
 .banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1600px; height: 30px; position: absolute; padding: 36px 0 0 0; top: 0px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.top-left {font-size:4.25em; color: #505050; background: #fafafa; text-align: center; width: 1600px; padding: 0 0 20px 0; top: 0px; line-height: 1.1;}
+.bottom-right {font-size:1.9em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
 .title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
 .title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:800px;}
+table.navigation{width:910px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
 td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
+td.title-break{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #2F4F4F; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
 td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
 td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
@@ -107,8 +110,9 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
 table.plenary{padding-top: 8px; background: #ffffff;}
 
 /* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
+iframe.registration{display:block; margin:1em auto 2em auto; width:70%; height:1400px; border:none;}
 iframe.program{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
+iframe.index{display:block; margin:1em auto 2em auto; width:30%; height:400px; border:none; float:left;}
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
 
@@ -126,7 +130,6 @@ footer{font-size:0.875em; margin-top:0em; text-align:center;}
 
 .container{
 	width: 100%;
-	height: 50vh;
 	display: flex;
 	align-items: left;
 	justify-content: left;
@@ -136,9 +139,9 @@ h4{
 	margin-right: 60px;
 }
 iframe{
-	width: 30%;
+/*	width: 30%;
 	height: 400px;
-	float: left;
+	float: left; */
 }
 div.horizontalgap {
   float: left;
