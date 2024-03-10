@@ -67,9 +67,7 @@ sub{
     line-height: 0;
 }
 table{
-    width: 1000px;
     margin: 12px auto 24px auto;
-    float: center;
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
     /*border: 1px solid black;*/
 }
@@ -169,7 +167,7 @@ font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-ali
 
 /* Style the tab */
 .tab {
-  /* overflow: hidden; */
+  overflow: hidden;
   border: none;/*1px solid #ccc;*/
   background-color: #f1f1f1;
   color: #813c54;
