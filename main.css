@@ -93,8 +93,8 @@ img {
 .title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:910px;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+table.navigation{width:1200px;}
+td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:left; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
@@ -108,7 +108,7 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
 table.plenary{padding-top: 8px; background: #ffffff;}
 
 /* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:70%; height:1400px; border:none;}
+iframe.registration{display:block; margin:1em auto 2em auto; width:70%; height:1850px; border:none;}
 iframe.program{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
 iframe.index{display:block; margin:1em auto 2em auto; width:30%; height:400px; border:none; float:left;}
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
@@ -209,3 +209,14 @@ font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-ali
   border-top: none;
 }
 
+/* Logos */
+.logos {
+  margin: auto;
+  width: 80%;
+  padding: 15px 15px;
+  text-align:center;
+}
+
+.logos img {
+  padding: 25px 100px 25px 100px;
+}
