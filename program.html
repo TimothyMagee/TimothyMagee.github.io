@@ -75,15 +75,15 @@
 
     <!-- Tab links -->
 <div class="tab">
-	<button class="tablinks active" onclick="openDay(event, 'monday')">Monday 17<sup>th</sup></button>
-  <button class="tablinks" onclick="openDay(event, 'tuesday')">Tuesday 18<sup>th</sup></button>
+	<button class="tablinks" onclick="openDay(event, 'monday')">Monday 17<sup>th</sup></button>
+  <button class="tablinks active" onclick="openDay(event, 'tuesday')">Tuesday 18<sup>th</sup></button>
   <button class="tablinks" onclick="openDay(event, 'wednesday')">Wednesday 19<sup>th</sup></button>
   <button class="tablinks" onclick="openDay(event, 'thursday')">Thursday 20<sup>th</sup></button>
   <button class="tablinks" onclick="openDay(event, 'friday')">Friday 21<sup>st</sup></button>
 </div>
 
 <!-- Tab content -->
-<div id="monday" class="tabcontent" style="display:block">
+<div id="monday" class="tabcontent">
     <table>
         <tr>
             <td class="date" rowspan="2">
@@ -206,7 +206,7 @@
     </table>
 </div>
 
-<div id="tuesday" class="tabcontent">
+<div id="tuesday" class="tabcontent" style="display:block">
     <table>
         <tr>
             <td class="date" rowspan="3">
